@@ -1,6 +1,11 @@
 from openai import OpenAI
 import os
-
+from langchain_core.prompts import PromptTemplate,FewShotPromptTemplate,ChatPromptTemplate
+"""
+PromptTemplate：通用提示词模板，支持动态注入信息。
+FewShotPromptTemplate：支持基于模板注入任意数量的示例信息。
+ChatPromptTemplate：支持注入任意数量的历史会话信息。
+"""
 client = OpenAI(
     # 如果没有配置环境变量，请用阿里云百炼API Key替换：api_key="sk-xxx"
     base_url="https://ws-75hdpe2iqisptozw.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",

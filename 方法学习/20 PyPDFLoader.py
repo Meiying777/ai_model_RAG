@@ -10,7 +10,7 @@ password='password'，#文件密码
 from langchain_community.document_loaders import PyPDFLoader
 
 loader = PyPDFLoader(
-    file_path="../data/pdf1.pdf",  # 文件路径
+    file_path="data/pdf1.pdf",  # 文件路径
     mode='page',                # 默认page，每个页面形成一个Document对象
                                 # single模式，不管有多少页都只返回一个Document对象
 )

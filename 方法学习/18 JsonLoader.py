@@ -18,7 +18,7 @@ json_lines：是否是JsonLines文件，默认False，非必填
 ·JsonLines文件：每一行都是一个独立的字典（Json对象）
 """
 loader = JSONLoader(
-    file_path='../data/stu_json_lines.json',  # 文件路径
+    file_path='data/stu_json_lines.json',  # 文件路径
     jq_schema='.',              # （必填）jq schema语法
     text_content=False,         # 告知jsonloader，内容是否为字符串
     json_lines=True,           # 告知jsonloader，内容是否为json_lines
